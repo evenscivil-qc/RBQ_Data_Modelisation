@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DRT_Adresse" id="9943F125-B6C4-3CCB-60C7-B8DFCEC930D9" version="3.5">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-16 12:42:31 UTC</createdTime>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9943F125-B6C4-3CCB-60C7-B8DFCEC930D9</designId>
+</OSDM_Design>

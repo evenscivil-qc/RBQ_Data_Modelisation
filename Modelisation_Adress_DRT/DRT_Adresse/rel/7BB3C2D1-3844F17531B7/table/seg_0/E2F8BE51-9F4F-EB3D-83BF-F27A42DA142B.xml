@@ -1,0 +1,732 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2F8BE51-9F4F-EB3D-83BF-F27A42DA142B" name="DRT_ADRESSE_ODONYME">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<generatorID>3BDB99D8-99DB-1694-128C-FC94CB395E48</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<abbreviation>DRT_ADRS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDE_UNIQ_ADRS" id="AF33507E-A741-3645-C3FD-3526ABAB0986">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Identifiant unique de l’adresse géolocalisée.]]></comment>
+<generatorID>13E78BDC-EB9E-C3FA-99B2-DAAAEA42701E</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_DIFS_VERS" id="ACB2ABAB-F080-99E0-E1F6-483633D68894">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Date de version. Correspond à la date de diffusion selon le format ]]></comment>
+<generatorID>23DC12AC-8621-813D-23D0-E9FB83B1A6CF</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_CREAT" id="A79C677E-A0E3-44AD-FAEF-040EAF4802C7">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Indique la date d’entrée en vigueur de l’adresse.]]></comment>
+<generatorID>6976DAF6-04C0-79E5-4E49-5FC999B8B312</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_MODF" id="E66A247F-7E4F-AD00-0701-AF5E5761F608">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[ndique la date de la dernière modification effectuée sur l’adresse]]></comment>
+<generatorID>C3DF713E-D41B-53A3-7B56-6CFD80726273</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_FIN" id="CB4E61EA-D415-EAF1-F8CB-0ACE542FEA86">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Indique la date à partir de laquelle l’adresse n’est plus utilisée]]></comment>
+<generatorID>E6DC9DBF-0D50-961E-71B4-74095C216EFD</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_MUNCP" id="0B306CFF-0B9C-9A76-220A-99EE9A54762C">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Numéro municipal de l’adresse]]></comment>
+<generatorID>275A0ED2-D802-4735-647D-36E91DB09A60</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_MUNCP_SUFX" id="E5D4DD70-785A-8631-4A29-C7A62FB655CE">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Un suffixe est un code utilisé pour 
+représenter une fraction ou une partie alphanumérique du numéro 
+d’immeuble et est nécessaire pour identifier des propriétés différentes 
+qui comportent le même numéro d’immeuble. ]]></comment>
+<generatorID>E2629B82-BA5E-076F-B93B-C6325163B0E0</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_UNIT" id="460BA7DA-966E-8FC6-D3D8-2D797D89E27B">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Numéro de l’unité.]]></comment>
+<generatorID>AA0709EA-A970-BD12-F380-34158BEFE693</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC_TYPE_UNIT" id="B891EE59-87D7-3EAD-C86E-02B9C55422E0">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Types d’étalement (positionnement) pour les unités ]]></comment>
+<generatorID>9737D25C-3053-234C-9389-4531F6989E83</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_POSTL" id="CEFDE742-1F33-A57A-5247-002023E52549">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Code postal : Combinaison alphanumérique à six caractères]]></comment>
+<generatorID>008B7E6F-4A5F-C4C3-F72D-8CA635C75BBF</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_SEQODO" id="EB28E442-CB5C-ECC2-DC20-3C5E99BB41C7">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Numéro séquentiel de l’odonyme de l’adresse]]></comment>
+<generatorID>E51A69E9-743E-850E-F904-AADD94F539C1</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_GENR_ODONM" id="248EB6BE-93F5-D558-C3AC-606EEAF38DDE">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Générique de l’odonyme.
+Le générique est l’un des éléments qui 
+composent le nom de la voie de communication]]></comment>
+<generatorID>D09D4AE7-9252-01D8-4BCD-BC7AF6CAFA02</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_PARTC_ODONM" id="3EA8774A-D586-C0FE-E57B-2CE622081496">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Particule de liaison de l’odonyme qui fait le lien entre le générique et le 
+spécifique]]></comment>
+<generatorID>9C4EA1F5-68D5-AE2A-06A8-7B8AD284F058</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_SPECF_ODONM" id="744E336F-6E14-EDE4-2CE5-0C2E5BA2331B">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Spécifique de l’odonyme qui désigne de façon particulière la voie de 
+communication.]]></comment>
+<generatorID>674029C5-7302-584F-4C07-0FD71576A937</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_POINT_CARDN_ODONM" id="15920AE9-DE0C-A958-C2BF-A2FA729B2445">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Le point cardinal, s’il est utilisé, doit indiquer la position de la voie de 
+communication par rapport à un point de référence, pour la localiser 
+dans l’espace. ]]></comment>
+<generatorID>6255550C-6C20-F446-EB67-8EE4B12CE7F7</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_ODONM_RECMP_NORM" id="4362ACBD-5F4A-6BD9-70C6-3BA447D8FB11">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Odonyme recomposé normal représentant le nom syntaxique de 
+l’odonyme AVEC le discriminant de l’odonyme lorsqu’il y en a un.]]></comment>
+<generatorID>403CA20B-A35E-A7DA-6B00-3A0B690FD8B9</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_ODONM_RECMP_COURT" id="679C5DFA-D714-7046-C445-8AECC75164A4">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Odonyme recomposé court représentant le nom syntaxique de 
+l’odonyme SANS le discriminant de l’odonyme.]]></comment>
+<generatorID>7BE6150E-9169-C7B8-F507-3A029ECF6710</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_ODONM_RECMP_LONG" id="77A72F6D-FDAA-DCA8-2E35-04BFB7B7B60F">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Odonyme recomposé long représentant le nom syntaxique de 
+l’odonyme SANS le discriminant de l’odonyme.]]></comment>
+<generatorID>52E9B545-8A31-88D5-2C5E-D38A19B93957</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_ODONM_RECMP_TRI" id="2AC21866-8A8A-D2DD-FA7C-D8181AD75732">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Odonyme recomposé et indexé en forçant le spécifique de l'odonyme 
+au début.]]></comment>
+<generatorID>937B843C-F34A-29DE-35BA-9D9AEA200590</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_ODONM_SPECF_TRI" id="CF3F3675-F616-8332-A8BD-03A8934A8775">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Valeur du spécifique de l’odonyme AVEC discriminant, sans espaces, 
+sans accents, sans tirets ni guillemets et dont les caractères sont en 
+majuscules.]]></comment>
+<generatorID>AA820E0A-47AF-D413-516F-CC916593DA10</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_DISCM_ODONM" id="9FE91ADD-A6E1-5206-48FB-BF5ABEC52393">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Discriminant de l’odonyme. Il contient de l’information pouvant faciliter 
+la localisation de l’odonyme sur le territoire.]]></comment>
+<generatorID>A0C05A42-9C61-A916-1898-E1EA88A2A633</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_ODONM_OFCL_CTOP" id="4C295979-CB3A-DA27-9DDA-65D1FEE3F766">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Indicateur précisant si l’odonyme porte ou non le nom officiel de la 
+Commission de toponymie. ]]></comment>
+<generatorID>4D8F66DF-7344-D806-89C7-E81FDF88D8BA</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_RENV_SEQODO" id="8438629C-8B1C-1158-E0E9-63955D0450D5">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Renvoi au « seqodo » de l’ancien odonyme pour la voie de 
+communication associée à l’adresse.]]></comment>
+<generatorID>CC673812-60A4-6194-509F-2D242A163D4C</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_RENV_SPECF_ODONM" id="0925F992-EDAD-CD3D-66A6-CF5967410EDB">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Renvoi au « specifique_odonyme » de l’ancien odonyme pour la voie 
+de communication associée à l’adresse. ]]></comment>
+<generatorID>E5CC7AA5-A01A-4D29-857F-4378BBD1B4F3</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAL_ADRS_FORMT" id="61090EE0-3F4D-8EC8-2F02-0CC5D12E1ECF">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Ensemble des caractéristiques associées à une adresse municipale. 
+Contient le numéro municipal]]></comment>
+<generatorID>BAFDB3CA-0F33-3658-CA83-5F0E71140E4F</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_QUALT_POST_GEOMT" id="E472820C-CB3B-A046-294D-E606B811157F">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Information sur la qualité du positionnement géométrique des 
+adresses.]]></comment>
+<generatorID>99757CFC-E649-AB6A-03BC-DE1A096E49FF</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAL_ETAT" id="451A703B-A91D-0682-2899-8A51BC4432FD">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Donne l’état de l’adresse quant à sa validité et à son utilisation]]></comment>
+<generatorID>5B07A617-5F10-2555-497F-3789389D160E</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_UTIL" id="F4DC5AB8-1D1B-9B00-36C4-08B5DF747B5F">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Code à 4 caractères de l’utilisation prédominante de l’adresse dérivée 
+du rôle d’évaluation.]]></comment>
+<generatorID>831DF696-3405-E1D6-7CAB-A439B6A3223B</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_CATG" id="62BF8557-F00C-EBF7-D75C-4423D3477836">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[La catégorie est basée sur le code d’utilisation et le tableau de 
+classification provenant du MAMH.]]></comment>
+<generatorID>45049948-92CA-8D56-B807-48554B62A9B7</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NB_UNIT" id="B26374E1-22A0-9F05-7B0F-248B595AF93D">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Le nombre d’unités associées à une adresse donne une approximation 
+du nombre d’appartements ou de locaux commerciaux contenus dans 
+l’édifice de l’adresse.]]></comment>
+<generatorID>D74A4263-E332-5DB6-E5B2-2ECC3FBE8DCD</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_LOT" id="1E75F491-FB19-EA12-5796-93BFBC645693">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Identifiant unique du cadastre du Québec associé à l’adresse]]></comment>
+<generatorID>6A6D377E-6531-330B-6C35-9A79DD0CDBCB</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_MATRC_UNIT_EVALT" id="B16F0B65-C392-49D8-85D6-224DB4A78AE0">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Matricule de l’unité d’évaluation et identifiant fournis par le MAMH, 
+composés d’un ensemble de 18 caractères (chiffres). Correspond 
+aussi aux coordonnées spatiales de l’unité d’évaluation. ]]></comment>
+<generatorID>59DA11E1-3C74-1C8C-9E7E-0BB8D6C48AD9</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOSQNOCIVQ" id="E2E20A88-AC5A-7E36-651D-0F1811453828">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Identifiant unique du numéro d’immeuble du référentiel d’EQ associé à 
+l’adresse.]]></comment>
+<generatorID>1ABD5331-C7F5-37F0-45F5-0BB3EA7BA332</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_CARCT_ADRS" id="4CBE7E61-B357-7923-3EB6-C7CB5ECF1A23">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Décrit une condition particulière, une caractéristique de l’adresse.]]></comment>
+<generatorID>DD66E102-B9A8-EE14-DDF8-7D47F3BC2B95</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_REGN_ADMN" id="6E10706E-D47B-C6A3-FF84-EDF22D6F89AD">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Code géographique de la région administrative]]></comment>
+<generatorID>230AC8DC-0D53-2488-C6A5-C060551AEA43</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM_REGN_ADMNS" id="FAD1F47C-04F1-6889-CD32-88676EF2A2AE">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Nom de la région administrative. ]]></comment>
+<generatorID>12E420CD-A35E-1913-C5E6-460FB8ADD55E</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MRC" id="72A4842E-FB07-BEEE-6D1F-33701FECD0AC">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Code géographique de la MRC.]]></comment>
+<generatorID>C1E9ED9A-EF6D-E017-83C7-43CF2A04CE65</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM_MRC" id="B30CD5D5-4E3E-699A-D6BF-CA6C66D1BFBC">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Nom de la MRC. ]]></comment>
+<generatorID>C0A779F7-4D10-5BF8-D8B8-DEAF3AF72B1F</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MUNCP" id="A2635E1E-DF0A-71EC-9079-03D65BE06D60">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Le code de la municipalité]]></comment>
+<generatorID>E039D3EE-317F-E2FB-AE3F-B489753A5405</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_NOM_MUNCP" id="BF70CE57-5766-033F-5B4D-75D015A3E113">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Le nom de la municipalité]]></comment>
+<generatorID>CA5B251B-0879-CB0B-38DD-7F03C61C1731</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_NOM_MUNCP_COMPL" id="86C20D56-DB47-0204-BDD3-9679A88581F5">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Nom complet de la municipalité incluant le type de désignation]]></comment>
+<generatorID>B607112A-1CE5-E55C-C7EA-760839BAC197</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_ARRDM" id="83BCAF3E-2E7D-6971-C9F8-3A9072BB1796">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Code géographique de l’arrondissement.]]></comment>
+<generatorID>61FDEDCE-F4A6-D392-25CA-E2D34A27A5D6</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM_ARRDM" id="903949CE-C48B-0355-E389-88F0270FD98A">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Nom de l’arrondissement.]]></comment>
+<generatorID>49745A83-5350-CBC7-E004-4A599B38C02A</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_COMNT_METRP" id="DF3374DE-094A-24F7-2EAE-5736848B268B">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Code géographique de la communauté métropolitaine.]]></comment>
+<generatorID>8A618C22-F2FF-454C-08A0-BCE315D0641A</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM_COMNT_METRP" id="805F4161-397A-97D6-0262-407159487EB7">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Nom de la communauté métropolitaine.]]></comment>
+<generatorID>63ABCA70-2014-3DFD-4B28-A354B2191039</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_RESEAU_ROUTR" id="DD43CFD0-1A87-6F19-154A-66557A000594">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Identifiant unique du segment de route à laquelle l’adresse est 
+associée.]]></comment>
+<generatorID>587CE8BC-20D1-0720-D2A0-455FF0621473</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_COTE_ROUT" id="5127D0A5-9C3B-6C97-7D98-ED793A82F9DB">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Côté de la route où est située l’adresse.]]></comment>
+<generatorID>A7A79BFC-CB51-581F-83C4-F9C892213623</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAL_LONGT" id="94E60191-E0A3-38D7-D33F-B937069DD223">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Coordonnée géographique X (horizontale).]]></comment>
+<generatorID>CE65E2CD-A9DF-BF81-8FE3-7F37B6ECB6FF</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>17</dataTypePrecision>
+<ownDataTypeParameters>,17,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAL_LATTD" id="CF5F6543-221C-BEB9-7752-043D6D026A9E">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<comment><![CDATA[Coordonnée géographique Y (verticale).]]></comment>
+<generatorID>CB41C248-8CBF-E4D6-A630-A561BD468172</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C5ABD3D-224B-8F24-B154-740666EC4584" name="DRT_ADRESSE_ODONYME_PK">
+<createdBy>cive02</createdBy>
+<createdTime>2026-10-20 20:09:23 UTC</createdTime>
+<generatorID>6035F867-0279-C7C7-A1AE-5B9C757355C8</generatorID>
+<ownerDesignName>DRT_Adresse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF33507E-A741-3645-C3FD-3526ABAB0986"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
